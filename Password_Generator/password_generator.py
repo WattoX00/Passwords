@@ -6,7 +6,7 @@
 '''
 
 import random
-num_password=int(input("How much password would you like to generate? "))
+num_password=int(input("How many passwords would you like to generate? "))
 #generator
 for _ in range(num_password):
     #variables
@@ -19,4 +19,4 @@ for _ in range(num_password):
         x = random.choice([i for i in range(48, 123) if i not in excluded_numbers])
         x: str =chr(x) #number to string
         password += x
-    print("\n""The passwors is: ""\n"+str(password))
+    print("\n""The password is: ""\n"+str(password))
